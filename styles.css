@@ -453,13 +453,13 @@ a {
 
 @keyframes engine {
   0% {
-    top: 250px;
+    bottom: 250px;
     color: black;
   }
   50% {
   }
   100% {
-  top: 0px;
+  bottom: 0px;
     color: white;
   }
 }
@@ -472,13 +472,13 @@ a {
 
 @keyframes lights {
   0% {
-    top: 500px;
+    bottom: 500px;
     color: black;
   }
   50% {
   }
   100% {
-    top: 0px;
+    bottom: 0px;
     color: white;
   }
 }
@@ -491,13 +491,13 @@ a {
 
 @keyframes suspension {
   0% {
-    top: 750px;
+    bottom: 750px;
     color: black;
   }
   50% {
   }
   100% {
-    top: 0px;
+    bottom: 0px;
     color: white;
   }
 }
@@ -510,13 +510,13 @@ a {
 
 @keyframes tires {
   0% {
-    top: 1000px;
+    bottom: 1000px;
     color: black;
   }
   50% {
   }
   100% {
-    top: 0px;
+    bottom: 0px;
     color: white;
   }
 }
