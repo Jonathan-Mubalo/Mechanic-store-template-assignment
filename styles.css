@@ -18,14 +18,6 @@ body {
 }
 /*NAV BAR STYLING*/
 
-/* #nav {
-  display: inline-block;
-  margin-top: 0px auto 10%;
-  width: 100%;
-  background-color: skyblue;
-  white-space: nowrap;
-} */
-
 #navbar {
   display: flex;
   flex-flow: row nowrap;
@@ -42,73 +34,50 @@ body {
   z-index: 1;
 }
 
-.nav a {
-  text-decoration: none;
+.nav a:link {
+  color: rgb(212, 171, 36);
 }
 
-a:hover {
+.nav a:visited {
+  color: rgb(13, 1, 20);
+}
+
+.nav a:hover {
   cursor: pointer;
-  color: navy;
+  color: rgb(70, 153, 50);
 }
 
 a:active {
-  color: darkolivegreen;
-}
-
-a:visited {
-  color: navy;
+  color: rgb(112, 34, 14);
+  cursor: wait;
 }
 
 .nav a {
   text-decoration: none;
-  color: black;
 }
 
 header {
-  /* margin: 10% auto; */
   text-align: center;
   text-decoration: underline;
   font-size: 20px;
-  /* font-family: "Comfortaa", sans-serif; */
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
-  margin-top: 7%;
+  margin-top: 5%;
 }
 
-/* INDEX PAGE AND DISPLAY OF DELERSHIP SERVICES*/
-/* .index{
-  background-image: url('./images/smoke.jpg');
-  background-repeat: no-repeat;
-  background-size: 100vw;
-  background-position: center;
-} */
 #main {
   display: flex;
   flex-flow: row nowrap;
-  /* flex-flow: column nowrap; */
-  /* width: 100vw; */
   height: 38vh;
   justify-content: space-evenly;
-  /* align-items: center; */
   margin: 10px 1.5%;
   color: white;
+  padding-bottom: 1%;
 }
-
-/* .column {
-  display: flex;
-  flex-flow: row nowrap;
-  width: 45vw;
-  height: 40vw;
-  justify-content: space-evenly;
-} */
 
 h3 {
-  text-align: center;
-}
-
-.price {
   text-align: center;
 }
 
@@ -117,47 +86,102 @@ img {
   height: 150px;
   border: 4px solid black;
   border-radius: 25px;
+  position: relative;
+  z-index: 1;
 }
 
 .suspension-service img {
   width: 240px;
   text-align: center;
-  /* height: 150px;*/
+  position: relative;
+  z-index: 1;
 }
 
-/* .engine-maintainance { */
-/* background-color: skyblue; */
-/* padding: 2.5px; */
-/* border: 2px solid black;
-  border-radius: 15px; */
-/* color: black;
-} */
+.engine-maintainance {
+  animation-name: engine;
+  animation-duration: 3.5s;
+  position: relative;
+}
 
-/* .light-service {
-  background-color: skyblue;
-   padding: 2.5px;
-  /* border: 2px solid black;
-  border-radius: 15px; */
-/* color: black;
-} */
+@keyframes engine {
+  0% {
+    right: 250px;
+    color: black;
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    right: 0px;
+    color: white;
+  }
+}
 
-/* .suspension-service {
-  background-color: skyblue;
-   padding: 2.5px; */
-/* border: 2px solid black;
-  border-radius: 15px; */
-/* color: black;
-} */
+.light-service {
+  animation-name: lights;
+  animation-duration: 3.5s;
+  position: relative;
+}
 
-/* .tire-service {
-  background-color: skyblue;
-  padding: 2.5px; */
-/* border: 2px solid black;
-  border-radius: 15px; */
-/* color: black;
-} */
+@keyframes lights {
+  0% {
+    top: 250px;
+    color: black;
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    top: 0px;
+    color: white;
+  }
+}
 
-footer {
+.suspension-service {
+  animation-name: suspension;
+  animation-duration: 3.5s;
+  position: relative;
+}
+
+@keyframes suspension {
+  0% {
+    bottom: 500px;
+    color: black;
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    bottom: 0px;
+    color: white;
+  }
+}
+
+.tire-service {
+  animation-name: tires;
+  animation-duration: 3.5s;
+  position: relative;
+}
+
+@keyframes tires {
+  0% {
+    left: 250px;
+    color: black;
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    left: 0px;
+    color: white;
+  }
+}
+
+.engine-maintainance footer {
   border-radius: 12px;
   margin: 0% auto;
   width: 80%;
@@ -172,31 +196,28 @@ footer {
 
 .footer-list {
   list-style-type: none;
-  /* display: inline-block; */
 }
 
 footer h2 {
   font-size: 20px;
-  padding-bottom: 1%;
+  padding-bottom: 0.5%;
   text-decoration: underline;
 }
 
 .footer-list li {
-  /* font-size: 35px; */
   text-align: start;
   margin: 0px 6%;
 }
 
 li span {
-  /* font-size: 25px; */
   text-align: end;
 }
 
 footer p {
-  /* font-size: 25px; */
   text-align: center;
   margin-top: 3%;
 }
+
 footer {
   border-radius: 12px;
   margin: 0% auto;
@@ -216,17 +237,12 @@ footer h2 {
   text-decoration: underline;
 }
 
-footer p {
-  /* font-size: 25px; */
-  /* text-align: center;
-  margin-top: 3%; */
-}
 .openDays {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 1%;
+  margin-bottom: 0%;
 }
 .openDays h3 {
   text-decoration: underline;
@@ -292,14 +308,13 @@ footer p {
 .contactUs {
   text-align: center;
   padding: 6% 0% 9%;
-  /* height: 46vh; */
   margin-top: 5%;
   margin-bottom: 1%;
 }
 
 a {
   text-decoration: underline;
-  color: black;
+  color: rgb(13, 35, 85);
 }
 
 .icon {
@@ -373,7 +388,7 @@ a {
   .suspension-service img {
     width: 210px;
   }
-  .main-font{
+  .main-font {
     font-size: 15px;
   }
 }
@@ -412,14 +427,21 @@ a {
   footer {
     position: unset;
   }
-  span{
+  span {
     font-size: 12px;
   }
 
-  .ContactUs-main{
+  .ContactUs-main {
     flex-flow: column nowrap;
     width: auto;
     height: auto;
     position: unset;
+  }
+  
+  .index{
+    background-attachment: scroll;
+  }
+  body{
+    background-attachment: scroll;
   }
 }
