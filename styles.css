@@ -439,9 +439,85 @@ a {
   }
   
   .index{
-    background-attachment: scroll;
+    background-size: auto ;
   }
   body{
-    background-attachment: scroll;
+    background-size: auto;
   }
+  
+  .engine-maintainance {
+  animation-name: engine;
+  animation-duration: 3.5s;
+  position: relative;
+}
+
+@keyframes engine {
+  0% {
+    top: 250px;
+    color: black;
+  }
+  50% {
+  }
+  100% {
+  top: 0px;
+    color: white;
+  }
+}
+
+.light-service {
+  animation-name: lights;
+  animation-duration: 4.5s;
+  position: relative;
+}
+
+@keyframes lights {
+  0% {
+    top: 500px;
+    color: black;
+  }
+  50% {
+  }
+  100% {
+    top: 0px;
+    color: white;
+  }
+}
+
+.suspension-service {
+  animation-name: suspension;
+  animation-duration: 5.5s;
+  position: relative;
+}
+
+@keyframes suspension {
+  0% {
+    top: 750px;
+    color: black;
+  }
+  50% {
+  }
+  100% {
+    top: 0px;
+    color: white;
+  }
+}
+
+.tire-service {
+  animation-name: tires;
+  animation-duration: 6.5s;
+  position: relative;
+}
+
+@keyframes tires {
+  0% {
+    top: 1000px;
+    color: black;
+  }
+  50% {
+  }
+  100% {
+    top: 0px;
+    color: white;
+  }
+}
 }
